@@ -1,5 +1,6 @@
 function domSearch(selector, isCaseSensitive) {
     let container = $(selector);
+
     let addDiv = $('<div>');
     let searchDiv = $('<div>');
     let resultDiv = $('<div>');
@@ -15,7 +16,7 @@ function domSearch(selector, isCaseSensitive) {
     addLink.attr('href', '#');
     addLink.attr('id', 'add');
     addLink.addClass('button');
-    addLink.css('display', 'inline-block');
+    addLink.css('display', 'block');
     addLink.text('Add');
     addDiv.append(addLabel);
     addDiv.append(addLink);
@@ -42,7 +43,6 @@ function domSearch(selector, isCaseSensitive) {
     $('#add').on('click', function (event) {
         event.preventDefault();
         let newLi = $('<li>');
-
         let remLink = $('<a>');
         remLink.attr('href', '#');
         remLink.addClass('button');
@@ -61,7 +61,7 @@ function domSearch(selector, isCaseSensitive) {
     });
 
     function matches(li, text) {
-        $(li).css('display', 'inline-block');
+        $(li).css('display', 'block');
         if(isCaseSensitive) {
             let regex = new RegExp(''+text+'', '');
             if (!regex.test($(li).find('strong').text())) {
