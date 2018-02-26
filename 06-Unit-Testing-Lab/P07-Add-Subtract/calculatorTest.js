@@ -17,13 +17,25 @@ describe("Test createCalculator", () => {
             expect(typeof calc).to.equal('object');
         }),
 
+        it("should have property add", () =>  {
+            expect(calc.hasOwnProperty('add')).to.be.true;
+        }),
+
+        it("should have property subtract", () =>  {
+            expect(calc.hasOwnProperty('subtract')).to.be.true;
+        }),
+
+        it("should have property get", () =>  {
+            expect(calc.hasOwnProperty('get')).to.be.true;
+        }),
+
         it("should have value of 0 when created", () => {
             expect(calc.get()).to.equal(0);
         }),
 
         it("should return undefined accessing value from outside", () => {
             expect(calc.value).to.equal(undefined);
-        }),
+        })
     ]);
 
     describe("Values tests", () => [
