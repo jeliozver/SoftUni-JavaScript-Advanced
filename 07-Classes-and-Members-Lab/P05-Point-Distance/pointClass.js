@@ -7,10 +7,8 @@ class Point {
     static distance(a, b) {
         const dx = a.x - b.x;
         const dy = a.y - b.y;
-        return Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2))
+        return Math.hypot(dx, dy);
     }
 }
 
-let p1 = new Point(5, 5);
-let p2 = new Point(9, 8);
-console.log(Point.distance(p1, p2));
+module.exports = {Point};

@@ -21,4 +21,4 @@ function getPersons() {
     return result;
 }
 
-console.log(getPersons().join(', '));
+module.exports = {getPersons};

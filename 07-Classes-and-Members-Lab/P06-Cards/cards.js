@@ -1,4 +1,4 @@
-let result = ((() => {
+let cardModule = ((() => {
     const Suits = {
         'SPADES': "\u2660", // ♠
         'HEARTS': "\u2665", // ♥
@@ -23,6 +23,7 @@ let result = ((() => {
             if (!validFaces.includes(value)) {
                 throw new Error('Invalid card face!');
             }
+
             this._face = value;
         }
 
@@ -34,6 +35,7 @@ let result = ((() => {
             if (!validSuits.includes(value)) {
                 throw new Error('Invalid card suit!');
             }
+
             this._suit = value;
         }
 
@@ -48,10 +50,4 @@ let result = ((() => {
     }
 }))();
 
-let Card = result.Card;
-let Suits = result.Suits;
-let card = new Card('Q', Suits.CLUBS);
-console.log(card.toString());
-card.face = 'A';
-card.suit = Suits.HEARTS;
-console.log(card.toString());
+module.exports = {cardModule};

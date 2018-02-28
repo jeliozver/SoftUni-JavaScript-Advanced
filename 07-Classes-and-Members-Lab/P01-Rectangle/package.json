@@ -1,0 +1,8 @@
+{
+  "name": "P01-Rectangle",
+  "version": "0.0.1",
+  "dependencies": {
+    "mocha": "latest",
+    "chai": "latest"
+  }
+}

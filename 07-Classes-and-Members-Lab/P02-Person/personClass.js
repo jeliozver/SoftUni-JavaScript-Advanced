@@ -11,5 +11,4 @@ class Person {
     }
 }
 
-let person = new Person('Maria', 'Petrova', 22, 'mp@yahoo.com');
-console.log(person.toString());
+module.exports = {Person};
