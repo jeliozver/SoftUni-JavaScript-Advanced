@@ -1,0 +1,8 @@
+{
+  "name": "P07-Instance-Validation",
+  "version": "0.0.1",
+  "dependencies": {
+    "mocha": "latest",
+    "chai": "latest"
+  }
+}
