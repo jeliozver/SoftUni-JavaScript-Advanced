@@ -6,12 +6,10 @@ function classHierarchy() {
             }
         }
 
-        get area() {
-            return undefined;
-        }
-
         toString() {
-            return this.constructor.name;
+            let type = this.constructor.name;
+            let props = Object.getOwnPropertyNames(this);
+            return type + ' - ' + props.map(p => `${p}: ${this[p]}`).join(', ');
         }
     }
 
@@ -25,9 +23,6 @@ function classHierarchy() {
             return Math.PI * this.radius * this.radius;
         }
 
-        toString() {
-            return `${super.toString()} - radius: ${this.radius}`
-        }
     }
 
     class Rectangle extends Figure {
@@ -39,10 +34,6 @@ function classHierarchy() {
 
         get area() {
             return this.width * this.height;
-        }
-
-        toString() {
-            return `${super.toString()} - width: ${this.width}, height: ${this.height}`
         }
     }
 
