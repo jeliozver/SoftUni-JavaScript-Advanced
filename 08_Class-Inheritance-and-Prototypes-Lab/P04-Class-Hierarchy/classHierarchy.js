@@ -5,6 +5,14 @@ function classHierarchy() {
                 throw new Error("Cannot be instantiated!");
             }
         }
+
+        get area() {
+            return undefined;
+        }
+
+        toString() {
+            return this.constructor.name;
+        }
     }
 
     class Circle extends Figure {
@@ -18,7 +26,7 @@ function classHierarchy() {
         }
 
         toString() {
-            return `${this.constructor.name} - radius: ${this.radius}`
+            return `${super.toString()} - radius: ${this.radius}`
         }
     }
 
@@ -34,7 +42,7 @@ function classHierarchy() {
         }
 
         toString() {
-            return `${this.constructor.name} - width: ${this.width}, height: ${this.height}`
+            return `${super.toString()} - width: ${this.width}, height: ${this.height}`
         }
     }
 
@@ -53,7 +61,7 @@ let Rectangle = container.Rectangle;
 let c = new Circle(5);
 console.log(c.area);        //78.53981633974483
 console.log(c.toString());  //Circle - radius: 5
-let r = new Rectangle(3,4);
+let r = new Rectangle(3, 4);
 console.log(r.area);        //12
 console.log(r.toString());  //Rectangle - width: 3, height: 4
 // let f = new Figure();       //Error
