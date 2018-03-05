@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../ES6-Modules/app.js"],"names":["result","Employee","Branch"],"mappings":";;AAAA;;AACA;;AAEAA,OAAOC,QAAP;AACAD,OAAOE,MAAP","file":"app.js","sourcesContent":["import { Employee } from \"./employee\";\r\nimport { Branch } from \"./branch\";\r\n\r\nresult.Employee = Employee;\r\nresult.Branch = Branch;"]}
