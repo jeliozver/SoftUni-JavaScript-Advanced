@@ -1,0 +1,7 @@
+{
+  "name": "P01-Person",
+  "version": "0.0.1",
+  "dependencies": {
+    "systemjs": "latest"
+  }
+}
