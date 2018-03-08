@@ -1,0 +1,1 @@
+Here you can find my solutions for some of the previous exams from SoftUni's JavaScript Advanced course
