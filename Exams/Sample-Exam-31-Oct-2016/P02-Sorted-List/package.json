@@ -1,0 +1,8 @@
+{
+  "name": "P02-Sorted-List",
+  "version": "0.0.1",
+  "dependencies": {
+    "chai": "latest",
+    "mocha": "latest"
+  }
+}
