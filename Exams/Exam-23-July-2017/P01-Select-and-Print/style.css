@@ -1,0 +1,23 @@
+select {
+    width: 100px;
+}
+.block {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+button {
+    width: 60px;
+}
+#btnRight {
+    display: block;
+    margin-top: 20px;
+}
+#btnLeft {
+    display: block;
+    margin-top: 5px;
+}
+#btnPrint {
+    display: block;
+    margin-top: 5px;
+}
