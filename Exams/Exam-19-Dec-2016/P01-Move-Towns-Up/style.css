@@ -1,0 +1,15 @@
+select {
+    width: 70px;
+}
+.block {
+    display: inline-block;
+    vertical-align: top;
+}
+#btnUp {
+    display: block;
+    margin-top: 18px;
+}
+#btnDown {
+    display: block;
+    margin-top: 10px;
+}

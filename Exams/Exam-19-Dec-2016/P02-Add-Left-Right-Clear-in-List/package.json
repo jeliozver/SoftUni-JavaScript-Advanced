@@ -1,0 +1,8 @@
+{
+  "name": "P02-Add-Left-Right-Clear-in-List",
+  "version": "0.0.1",
+  "dependencies": {
+    "chai": "latest",
+    "mocha": "latest"
+  }
+}
