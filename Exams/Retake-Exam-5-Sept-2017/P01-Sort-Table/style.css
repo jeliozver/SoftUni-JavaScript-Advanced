@@ -1,0 +1,29 @@
+body {
+    padding: 30px;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px 20px;
+}
+th {
+    background: #cccccc;
+}
+tr:nth-child(odd) {
+    background: #eeeeee;
+}
+tr:nth-child(even) {
+    background: #dddddd;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+.active {
+    color: #99ff99;
+}

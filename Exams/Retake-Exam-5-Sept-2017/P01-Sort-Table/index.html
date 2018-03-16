@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sort-Table</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<h1>Sort Table</h1>
+<table id="products">
+    <thead>
+    <tr>
+        <th>Name
+            <a href="javascript:sort(0, false)">&#x25B2;</a> <a href="javascript:sort(0, true)">&#x25BC;</a>
+        </th>
+        <th>Price
+            <a href="javascript:sort(1, false)">&#x25B2;</a> <a href="javascript:sort(1, true)">&#x25BC;</a>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Potatoes</td>
+        <td>0.89</td>
+    </tr>
+    <tr>
+        <td>Tomatoes</td>
+        <td>2.30</td>
+    </tr>
+    <tr>
+        <td>Bananas</td>
+        <td>1.79</td>
+    </tr>
+    </tbody>
+</table>
+<script src="sortTable.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.dialog {
+    border: 1px solid black;
+    background: #eeeeee;
+    display: inline-block;
+    margin: 40vh auto;
+    padding: 1em 3em;
+}
