@@ -1,0 +1,39 @@
+body {
+    padding: 30px;
+}
+table, section {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px 20px;
+}
+th, tfoot td {
+    background: #cccccc;
+}
+tr:nth-child(odd) {
+    background: #eeeeee;
+}
+tr:nth-child(even) {
+    background: #dddddd;
+}
+tfoot > tr td {
+    font-style: italic;
+    font-weight: bold;
+}
+section {
+    margin-top: 10px;
+    width: 177px;
+    background: #cccccc;
+}
+section > * {
+    display: block;
+    padding: 5px;
+}
+h3 {
+    margin: 0;
+    text-align: center;
+}
+button {
+    margin: 5px auto;
+}
